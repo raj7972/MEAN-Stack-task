@@ -46,6 +46,11 @@ export class InventoryService {
   return this.http.post<any>(`${this.API_BASE}/confirm`, { reservationId });
 }
 
+releaseReservation(reservationId: string) {
+  return this.http.post<any>(`${this.API_BASE}/release`, { reservationId });
+}
+
+
 
 
 

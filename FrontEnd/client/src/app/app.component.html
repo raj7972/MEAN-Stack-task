@@ -1,11 +1,21 @@
-<nav class="nav">
-  <a routerLink="/">Bulk Upload</a>
-  <a routerLink="/availability">Availability</a>
-  <a routerLink="/stocks">All Stocks</a>
-  <a routerLink="/reserve">Reserve</a>
-  <a routerLink="/confirm">Confirm</a>
+<div class="app-shell">
+  <header class="app-header">
+    <div class="logo">
+      <span class="logo-mark">IM</span>
+      <span class="logo-text">Inventory Manager</span>
+    </div>
 
+    <nav class="nav">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Bulk Upload</a>
+      <a routerLink="/availability" routerLinkActive="active">Availability</a>
+      <a routerLink="/stocks" routerLinkActive="active">All Stocks</a>
+      <a routerLink="/reserve" routerLinkActive="active">Reserve</a>
+      <a routerLink="/confirm" routerLinkActive="active">Confirm</a>
+      <a routerLink="/release" routerLinkActive="active">Release</a>
+    </nav>
+  </header>
 
-</nav>
-
-<router-outlet></router-outlet>
+  <main class="app-main">
+    <router-outlet></router-outlet>
+  </main>
+</div>

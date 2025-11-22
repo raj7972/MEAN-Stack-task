@@ -1,0 +1,219 @@
+name,availableStock,reservedStock
+Lenovo Laptop,10,2
+HP Monitor,25,5
+Dell Mouse,40,1
+Acer Keyboard,15,0
+Dell Mouse,56,7
+Lenovo keyboard,67,3
+Intel Core i9-13900K,8,1
+Intel Core i9-12900K,9,9
+Intel Core i9-11900K,65,4
+Intel Core i7-13700K,7,6
+Intel Core i7-12700K,8,2
+Intel Core i7-11700K,4,8
+Intel Core i5-13600K,5,5
+Intel Core i5-12600K,6,0
+Intel Core i5-11600K,7,4
+Intel Core i3-13100F,7,7
+Intel Core i3-12100F,8,2
+Intel Core i3-10100F,89,9
+AMD Ryzen 9 7950X,9,1
+AMD Ryzen 9 7900X,2,6
+AMD Ryzen 9 5950X,3,8
+AMD Ryzen 7 7700X,3,3
+AMD Ryzen 7 5800X,4,5
+AMD Ryzen 5 7600X,5,0
+AMD Ryzen 5 5600X,5,9
+NVIDIA RTX 4090,6,4
+NVIDIA RTX 4080,7,1
+NVIDIA RTX 4070,7,7
+NVIDIA RTX 3090,7,3
+NVIDIA RTX 3080,8,8
+NVIDIA RTX 3070,8,2
+NVIDIA RTX 3060,8,6
+NVIDIA RTX 2080 Ti,8,5
+NVIDIA GTX 1080 Ti,8,0
+NVIDIA GTX 1660 Super,8,3
+AMD Radeon RX 7900 XTX,8,9
+AMD Radeon RX 7900 XT,89,6
+AMD Radeon RX 6900 XT,9,1
+AMD Radeon RX 6800 XT,8,4
+AMD Radeon RX 6700 XT,98,8
+AMD Radeon RX 6600 XT,9,2
+AMD Radeon RX 580,9,7
+AMD Radeon RX Vega 64,9,5
+AMD Radeon RX 7600,9,0
+ASUS ROG Strix Z790-E,9,6
+ASUS ROG Strix Z690-F,,3
+ASUS TUF Gaming B550M,7,8
+ASUS Prime A320M-K,7,1
+MSI MPG Z790 Carbon,63,9
+MSI MAG B650 Tomahawk,5,4
+MSI B450 Gaming Pro,5,2
+Gigabyte Z790 Aorus Elite,53,7
+Gigabyte B550 Aorus Pro,5,5
+Gigabyte H510M S2H,4,0
+ASRock B550 Phantom Gaming,4,8
+ASRock Z690 Pro RS,4,6
+Biostar B450MH,3,4
+Corsair Vengeance 8GB,4,1
+Corsair Vengeance 16GB,3,9
+Corsair Vengeance 32GB,4,3
+G.Skill Trident Z 8GB,5,7
+G.Skill Trident Z 16GB,6,2
+G.Skill Trident Z 32GB,78,5
+Kingston Fury 8GB,,0
+Kingston Fury 16GB,9,1
+Kingston Fury 32GB,8,8
+Adata XPG 8GB,77,6
+Adata XPG 16GB,6,4
+HyperX Predator 8GB,23,7
+HyperX Predator 16GB,56,9
+Samsung 980 Pro 1TB,76,3
+Samsung 970 Evo 500GB,7,2
+Samsung 860 Evo 1TB,8,5
+Crucial MX500 1TB,9,0
+Crucial P5 1TB,34,4
+WD Black SN850 1TB,5,6
+WD Blue SN550 500GB,678,8
+Seagate FireCuda 520 1TB,89,1
+Adata SU650 480GB,87,7
+Kingston NV2 1TB,6,3
+Kingston A400 240GB,6,9
+Seagate Barracuda 1TB,5,2
+Seagate Barracuda 2TB,5,5
+Seagate Barracuda 4TB,5,0
+WD Blue 1TB,5,8
+WD Blue 2TB,4,4
+WD Blue 4TB,4,7
+WD Black 1TB,5,1
+WD Black 2TB,56,6
+Toshiba P300 1TB,6,9
+Toshiba P300 3TB,788,3
+Cooler Master Hyper 212,9,2
+Cooler Master ML240L,9,5
+Corsair H100i RGB,8,0
+NZXT Kraken Z63,7,9
+NZXT Kraken X53,7,7
+Arctic Freezer 34,6,3
+Noctua NH-D15,8,6
+Deepcool Gammaxx,5,1
+Thermaltake Water 3.0,4,8
+Thermaltake Smart 700W,3,4
+Antec Neo Eco 750W,4,2
+Gigabyte P650B,565,5
+NZXT H510,6,0
+NZXT H400,12,6
+Cooler Master HAF 500,7,8
+Corsair 4000D,8,1
+Corsair 5000D,8,4
+Lian Li O11 Dynamic,8,9
+Lian Li LANCOOL 205,9,3
+Thermaltake V200,8,7
+Mobile CPU (Snapdragon 8+ Gen 1),7,2
+Snapdragon 888,6,5
+Snapdragon 870,6,0
+Snapdragon 732G,5,2
+MediaTek Dimensity 1200,5,2
+MediaTek Dimensity 900,44,33
+Exynos 2100,4,2
+Apple A15 Bionic,4,2
+Apple A16 Bionic,6,2
+Apple A14 Bionic,22,2
+LPDDR4 RAM 4GB,6,5
+LPDDR5 RAM 8GB,7,5
+UFS 2.1 storage chip,7,55
+UFS 3.1 storage chip,7,5
+eMMC 32GB,7,5
+eMMC 64GB,78,5
+LCD 5.5 inch generic,8,5
+LCD 6.3 inch generic,9,7
+AMOLED 6.4 inch generic,8,7
+OLED 6.7 inch generic,8,7
+iPhone 11 LCD,11,7
+iPhone 12 OLED,7,0
+iPhone 13 OLED,7,0
+Samsung A52 display,65,4
+Samsung A30 display,5,2
+Redmi Note 9 display,6,2
+Realme 6 display,8,2
+48MP rear camera module,4,2
+64MP rear camera module,7,2
+108MP rear camera module,6,2
+8MP front camera module,6,2
+16MP front camera module,5,2
+32MP front camera module,4,2
+iPhone 12 main camera,5,4
+iPhone 13 main camera,6,4
+Samsung A50 camera set,7,4
+Li-ion 4000mAh,8,5
+Li-ion 4500mAh,89,5
+Li-ion 5000mAh,89,53
+iPhone 11 battery,8,3
+iPhone 12 battery,7,5
+iPhone 13 battery,43,56
+Samsung A30 battery,434,55
+Samsung M31 battery,54,12
+Redmi Note 8 battery,5,3
+USB Type-C port module,55,44
+Micro USB charging port,5,4
+Lightning port assembly,6,4
+Wireless charging coil,7,5
+Fast charging IC,89,11
+PMIC chip,67,6
+SIM tray,5,7
+SIM slot reader,4,7
+Wi-Fi antenna,3,7
+Bluetooth antenna,5,7
+RF cable,6,6
+Power button flex,67,5
+Volume button flex,8,4
+Fingerprint sensor flex,8,4
+Home button flex,6,4
+Camera flex,565,4
+Charging flex,6,5
+Earpiece speaker,7,6
+Bottom speaker,8,6
+Loudspeaker module,55,7
+Mic module,9,7
+Headphone jack flex,88,7
+Vibrator motor,8,2
+Proximity sensor,11,1
+Accelerometer chip,18,9
+Gyro sensor,15,4
+Ambient light sensor,16,6
+NFC module,14,2
+Vibration IC,10,8
+Audio codec IC,20,5
+Touch IC,13,0
+Backlight IC,19,4
+Motherboard shield,11,7
+Thermal graphite sheet,17,2
+SIM ejector pin,18,9
+Dust mesh,12,1
+Speaker grill,16,6
+Microphone rubber,14,8
+Adhesive glue strips,15,3
+Waterproof gasket,19,5
+Mid-frame,10,0
+Mobile frame bezel,18,9
+Camera lens glass,13,4
+Camera ring,17,1
+Battery cover,12,7
+Tempered glass,20,3
+Back cover,11,8
+Pop socket,16,2
+Mobile stand,14,6
+OTG cable,19,5
+USB-C cable,15,0
+Lightning cable,13,3
+Fast charger 25W,18,9
+Wireless charger 15W,12,6
+Car charger,17,1
+Bluetooth earphones,11,8
+Wired earphones,20,2
+Car charger,16,7
+Bluetooth earphones,14,5
+Wired earphones,19,3
+,,
+,,

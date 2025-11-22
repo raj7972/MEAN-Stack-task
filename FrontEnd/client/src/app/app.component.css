@@ -1,5 +1,81 @@
-body { background:#f6f9ff; margin:0; font-family: Inter, Roboto, Arial, sans-serif; color:#1d1d1f; }
-.app-header { max-width:920px; margin:18px auto; display:flex; justify-content:space-between; align-items:center; gap:12px; }
-.app-header h1 { margin:0; font-size:18px; color:#0b3d91; }
-.app-header .ref { font-size:13px; color:#0b63d4; text-decoration:none; }
-main { max-width:920px; margin:0 auto 60px; padding:0 12px; }
+body {
+  margin: 0;
+  font-family: Inter, Roboto, Arial, sans-serif;
+  background: #f6f9ff;
+  color: #1d1d1f;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: #0b63d4;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 16px;
+  color: #0b3d91;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #1f2933;
+  background: transparent;
+  border: 1px solid transparent;
+  transition: 0.15s all ease;
+}
+
+.nav a:hover {
+  background: #e3efff;
+  border-color: #bfd6ff;
+}
+
+.nav a.active {
+  background: #0b63d4;
+  color: #ffffff;
+  border-color: #0b63d4;
+}
+
+.app-main {
+  max-width: 1100px;
+  margin: 16px auto 40px;
+  padding: 0 16px 40px;
+}

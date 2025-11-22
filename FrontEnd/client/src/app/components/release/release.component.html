@@ -1,0 +1,17 @@
+<div class="card">
+  <h2>Release Reservation</h2>
+
+  <div class="form">
+    <label>Reservation ID</label>
+    <input type="text"
+           [(ngModel)]="reservationId"
+           placeholder="Enter Reservation ID" />
+
+    <button (click)="release()" [disabled]="loading">
+      {{ loading ? 'Processing...' : 'Release Reservation' }}
+    </button>
+  </div>
+
+  <p class="success" *ngIf="message">{{ message }}</p>
+  <p class="error" *ngIf="error">{{ error }}</p>
+</div>

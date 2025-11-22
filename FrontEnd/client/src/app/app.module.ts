@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { StocksListComponent } from './components/stocks-list/stocks-list.component';
 import { ReserveComponent } from './components/reserve/reserve.component';
 import { ConfirmComponent } from './components/confirm/confirm.component';
+import { ReleaseComponent } from './components/release/release.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ConfirmComponent } from './components/confirm/confirm.component';
     AvailabilityComponent,
     StocksListComponent,
     ReserveComponent,
-    ConfirmComponent
+    ConfirmComponent,
+    ReleaseComponent
   ],
   imports: [
     BrowserModule,
