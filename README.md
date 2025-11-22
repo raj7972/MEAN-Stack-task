@@ -1,3 +1,128 @@
+🚀 How to Run This Project (MEAN Stack)
+
+This project contains both backend (Node + Express + MongoDB) and frontend (Angular).
+Follow the steps below to run everything successfully.
+
+🟦 1. Clone the Repository
+git clone https://github.com/raj7972/MEAN-Stack-task.git
+cd MEAN-Stack-task
+
+🟩 2. Run the Backend (Node + Express + MongoDB)
+🔧 Step 1 — Go to backend folder:
+cd Backend
+
+🔧 Step 2 — Install dependencies:
+npm install
+
+🔧 Step 3 — Make sure MongoDB is running
+
+If using local MongoDB:
+
+mongod
+
+
+Or if using Mongo Atlas, ensure your connection string is added inside your backend code.
+
+🔧 Step 4 — Start backend server:
+node server.js
+
+
+Or with nodemon:
+
+npx nodemon server.js
+
+Backend will run at:
+http://localhost:5000/
+
+🟧 3. Run the Frontend (Angular)
+🔧 Step 1 — Open new terminal
+
+Go to frontend folder:
+
+cd FrontEnd
+
+🔧 Step 2 — Install Angular dependencies:
+npm install
+
+🔧 Step 3 — Start Angular app:
+ng serve
+
+Frontend will run at:
+http://localhost:4200/
+
+🟨 4. Upload CSV File
+
+From the Bulk Upload page:
+
+Select a .csv file
+
+Click Upload
+
+Wait for progress bar
+
+View final summary + error/success report
+
+CSV Format example:
+
+name,availableStock,reservedStock
+iPhone,10,5
+Samsung,20,3
+Dell Mouse,30,1
+
+🟪 5. Inside the Application
+✔ Bulk Upload
+
+Uploads CSV + shows status + summary
+
+✔ Stock List
+
+Shows all available inventory
+
+✔ Availability
+
+Check stock for specific product ID
+
+✔ Reserve
+
+Creates a reservation
+
+✔ Confirm
+
+Confirms reservation using reservationId
+
+✔ Release
+
+Releases a reservation
+
+✔ Concurrency Test
+
+A special script is included:
+
+Backend/testConcurrency.js
+
+
+Run it with:
+
+node testConcurrency.js
+
+🟫 6. Environment Notes
+Backend:
+
+Node.js 18+
+
+MongoDB local or Atlas
+
+Frontend:
+
+Angular CLI installed globally:
+
+npm install -g @angular/cli
+
+
+
+
+
+
 🚀 MEAN Stack Inventory Management System
 
 A complete Inventory Management System built using the MEAN Stack (MongoDB, Express, Angular, Node.js) with support for:
