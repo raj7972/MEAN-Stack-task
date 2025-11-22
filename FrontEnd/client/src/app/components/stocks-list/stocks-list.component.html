@@ -1,0 +1,41 @@
+<div class="card">
+  <h2 class="title">All Product Stocks</h2>
+
+  <div *ngIf="loading" class="loading">Loading...</div>
+
+  <table *ngIf="!loading && products.length" class="tbl">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Product ID</th>
+        <th>Product</th>
+        <th>Available</th>
+        <th>Reserved</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let p of products; let i = index">
+        <td>{{ i + 1 }}</td>
+
+        <!-- Product ID -->
+        <td>{{ p._id }}</td>
+
+        <!-- Product Name -->
+        <td>{{ p.name }}</td>
+
+        <!-- Apply green/red color for available stock -->
+        <td [ngClass]="p.availableStock < 5 ? 'low-stock' : 'good-stock'">
+          {{ p.availableStock }}
+        </td>
+
+        <!-- Reserved Stock -->
+        <td>{{ p.reservedStock }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="!loading && products.length === 0" class="empty">
+    No products found.
+  </div>
+</div>

@@ -17,7 +17,7 @@ exports.bulkUpload = async (req, res) => {
       total: 0,
       processed: 0,
       failed: 0,
-      status: "in-progress"
+      status: "IN_PROGRESS"
     });
 
     // Start async processing

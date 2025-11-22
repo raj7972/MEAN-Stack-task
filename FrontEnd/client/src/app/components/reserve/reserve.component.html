@@ -1,0 +1,18 @@
+<div class="card">
+  <h2>Reserve Stock</h2>
+
+  <div class="form">
+    <label>Product ID</label>
+    <input type="text" [(ngModel)]="productId" placeholder="Enter Product ID">
+
+    <label>Quantity</label>
+    <input type="number" [(ngModel)]="qty" placeholder="Enter Qty">
+
+    <button (click)="reserve()" [disabled]="loading">
+      {{ loading ? 'Processing...' : 'Reserve' }}
+    </button>
+  </div>
+
+  <p class="success" *ngIf="message">{{ message }}</p>
+  <p class="error" *ngIf="error">{{ error }}</p>
+</div>

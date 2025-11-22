@@ -1,0 +1,37 @@
+:host { display:block; font-family: Inter, Roboto, Arial, sans-serif; }
+
+.card {
+  max-width: 920px;
+  margin: 18px auto;
+  padding: 18px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(33,33,33,0.06);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.title { margin:0 0 12px; font-size:20px; color:#0b3d91; }
+
+.row { display:flex; gap:12px; align-items:center; margin-bottom:12px; }
+
+input[type=file] { padding:6px; }
+
+.btn { padding:8px 14px; border-radius:8px; border: none; cursor:pointer; font-weight:600; }
+.btn.primary { background:#0b63d4; color:#fff; box-shadow: 0 6px 14px rgba(11,99,212,0.12); }
+
+.progress-wrap { position:relative; height:20px; background:#f1f5fb; border-radius:8px; overflow:hidden; margin:10px 0; }
+.progress-bar { height:100%; background: linear-gradient(90deg,#0b63d4,#2ea3f2); transition: width 0.22s ease; }
+.progress-text { position:absolute; right:8px; top:0; font-size:12px; line-height:20px; color:#fff; text-shadow:0 1px 0 rgba(0,0,0,0.2); }
+
+.status { margin-top:10px; color:#333; font-size:14px; }
+.status-card { margin-top:8px; background:#fbfdff; padding:8px 12px; border-radius:8px; border:1px solid rgba(11,99,212,0.06); }
+
+.report { margin-top:14px; }
+.tbl { width:100%; border-collapse:collapse; margin-top:8px; }
+.tbl thead th { text-align:left; padding:8px; background:#f7f9ff; border-bottom:1px solid #e9efff; }
+.tbl tbody td { padding:8px; border-bottom:1px solid #f2f6ff; font-size:13px; }
+.err thead th { background:#fff6f6; }
+.err tbody td { background: #fff; color:#b40000; }
+.mono { font-family: monospace; font-size:12px; white-space:pre-wrap; }
+.ok { color: #0a9d58; font-weight:700; }
+.err { color:#b40000; font-weight:700; }

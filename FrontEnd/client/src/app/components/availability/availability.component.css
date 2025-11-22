@@ -1,0 +1,6 @@
+.card.small { max-width:920px; margin:20px auto; padding:14px; border-radius:10px; background:#fff; box-shadow:0 6px 20px rgba(33,33,33,0.04); border:1px solid rgba(0,0,0,0.03); }
+.title-small { color:#0b3d91; margin:0 0 10px; }
+.row { display:flex; gap:12px; align-items:center; }
+input { padding:8px 10px; border-radius:8px; border:1px solid #e6eefc; min-width:260px; }
+.small-note { margin-top:10px; color:#666; }
+.availability { margin-top:12px; }

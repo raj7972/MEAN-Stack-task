@@ -1,0 +1,57 @@
+<div class="card">
+  <h2 class="title">Bulk Upload</h2>
+
+  <div class="row">
+    <input id="file" type="file" (change)="onFileSelected($event)" accept=".csv,.xlsx" />
+    <button class="btn primary" (click)="startUpload()" [disabled]="!selectedFile || uploading">Upload</button>
+  </div>
+
+  <div *ngIf="progress > 0" class="progress-wrap" aria-hidden="false">
+    <div class="progress-bar" [style.width.%]="progress"></div>
+    <div class="progress-text">{{progress}}%</div>
+  </div>
+
+  <div class="status" *ngIf="uploadId">
+    <strong>Upload ID:</strong> {{ uploadId }} &nbsp; · &nbsp;
+    <strong>State:</strong> {{ status?.status || 'PENDING' }}
+  </div>
+
+  <div *ngIf="status" class="status-card">
+    <div><strong>Processed:</strong> {{ status.processed || 0 }} / {{ status.total || 0 }}</div>
+    <div *ngIf="status.status === 'IN_PROGRESS'">Processing… please wait</div>
+    <div *ngIf="status.status === 'COMPLETED'" class="ok">Completed</div>
+    <div *ngIf="status.status === 'FAILED'" class="err">Failed</div>
+  </div>
+
+  <div *ngIf="fileReports" class="report">
+    <h3>Upload Report</h3>
+
+    <div *ngIf="fileReports.success?.length">
+      <h4>Success ({{ fileReports.success.length }})</h4>
+      <table class="tbl">
+        <thead><tr><th>#</th><th>productId</th><th>message</th></tr></thead>
+        <tbody>
+          <tr *ngFor="let s of fileReports.success; let i=index">
+            <td>{{ i+1 }}</td>
+            <td>{{ s.productId || s.id || '-' }}</td>
+            <td>{{ s.message || (s.meta && s.meta.message) || 'OK' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div *ngIf="fileReports.errors?.length" class="errors">
+      <h4>Errors ({{ fileReports.errors.length }})</h4>
+      <table class="tbl err">
+        <thead><tr><th>#</th><th>row</th><th>error</th></tr></thead>
+        <tbody>
+          <tr *ngFor="let e of fileReports.errors; let i=index">
+            <td>{{ i+1 }}</td>
+            <td>{{ e.row || e.productId || '-' }}</td>
+            <td><pre class="mono">{{ e.message || e.detail || (e.error && (e.error.message || e.error)) }}</pre></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

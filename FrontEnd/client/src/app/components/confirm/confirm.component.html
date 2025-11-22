@@ -1,0 +1,15 @@
+<div class="card">
+  <h2>Confirm Reservation</h2>
+
+  <div class="form">
+    <label>Reservation ID</label>
+    <input type="text" [(ngModel)]="reservationId" placeholder="Enter Reservation ID">
+
+    <button (click)="confirm()" [disabled]="loading">
+      {{ loading ? 'Processing...' : 'Confirm Reservation' }}
+    </button>
+  </div>
+
+  <p class="success" *ngIf="message">{{ message }}</p>
+  <p class="error" *ngIf="error">{{ error }}</p>
+</div>

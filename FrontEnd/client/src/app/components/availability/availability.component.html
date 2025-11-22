@@ -1,0 +1,22 @@
+<div class="card small">
+  <h3 class="title-small">Product Availability</h3>
+
+  <div class="row">
+    <input [(ngModel)]="productId" placeholder="Product ID or SKU" />
+    <button class="btn primary" (click)="check()" [disabled]="loading">Check</button>
+  </div>
+
+  <div *ngIf="loading" class="small-note">Checking…</div>
+  <div *ngIf="error" class="err">{{ error }}</div>
+
+  <div *ngIf="result" class="availability">
+    <table class="tbl">
+      <tbody>
+
+        <tr><td><strong>Product</strong></td><td>{{ result.name || result.name || '-' }}</td></tr>
+        <tr><td><strong>Available Qty</strong></td><td>{{ result.availableStock ?? result.availableStock ?? '-' }}</td></tr>
+        <tr><td><strong>Reserved</strong></td><td>{{ result.reservedStock ?? '-' }}</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>

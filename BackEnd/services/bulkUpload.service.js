@@ -5,18 +5,22 @@ const Product = require("../models/product.model");
 exports.processBulkFile = async (filePath, bulkId) => {
   const bulk = await BulkUpload.findById(bulkId);
 
-  const lines = fs.readFileSync(filePath, "utf8").trim().split("\n");
+  let lines = fs.readFileSync(filePath, "utf8").trim().split("\n");
+
+  // Remove header row
+  lines = lines.slice(1);
+
   bulk.total = lines.length;
+  bulk.processed = 0;
+  bulk.failed = 0;
   await bulk.save();
 
   for (let line of lines) {
     try {
-      // Split by comma
       const cols = line.split(",");
 
       if (cols.length < 3) {
         bulk.failed++;
-        await bulk.save();
         continue;
       }
 
@@ -24,15 +28,15 @@ exports.processBulkFile = async (filePath, bulkId) => {
       const availableStock = Number(cols[1].trim());
       const reservedStock = Number(cols[2].trim());
 
-      // Update or insert product
+      if (isNaN(availableStock) || isNaN(reservedStock)) {
+        bulk.failed++;
+        continue;
+      }
+
+      // update product
       await Product.findOneAndUpdate(
         { name },
-        {
-          $set: {
-            availableStock,
-            reservedStock
-          }
-        },
+        { $set: { availableStock, reservedStock } },
         { upsert: true }
       );
 
@@ -40,10 +44,9 @@ exports.processBulkFile = async (filePath, bulkId) => {
     } catch (err) {
       bulk.failed++;
     }
-
-    await bulk.save();
   }
 
-  bulk.status = "completed";
+  // Final status
+  bulk.status = "COMPLETED";
   await bulk.save();
 };

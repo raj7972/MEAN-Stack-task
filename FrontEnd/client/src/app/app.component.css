@@ -1,0 +1,5 @@
+body { background:#f6f9ff; margin:0; font-family: Inter, Roboto, Arial, sans-serif; color:#1d1d1f; }
+.app-header { max-width:920px; margin:18px auto; display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.app-header h1 { margin:0; font-size:18px; color:#0b3d91; }
+.app-header .ref { font-size:13px; color:#0b63d4; text-decoration:none; }
+main { max-width:920px; margin:0 auto 60px; padding:0 12px; }
