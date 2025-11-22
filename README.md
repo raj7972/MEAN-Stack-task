@@ -8,6 +8,8 @@ A complete Inventory Management System built using the MEAN Stack (MongoDB, Expr
 ✔ Reservation → Confirmation → Release Workflow
 ✔ Full Inventory Listing
 ✔ Clean Angular UI
+✔ A dedicated concurrency testing script (`testConcurrency.js`) has been included in the Backend directory to simulate multiple parallel reservation requests and verify system stability under race conditions.
+
 📌 Table of Contents
 
 📌 Features
